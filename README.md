@@ -1,6 +1,7 @@
 # Air Quality Forecasting Using LSTM
 
-This project focuses on predicting PM2.5 air pollution levels in Beijing using historical weather and air quality data. It was developed for a Kaggle time series competition and explores various deep learning techniques, especially Long Short-Term Memory (LSTM) networks.
+The challenge involves predicting PM2.5 concentrations in Beijing, utilising historical air quality and weather data. This task is approached through time series forecasting using Recurrent Neural Networks (RNNs) and Long Short-Term Memory (LSTM) networks, which are mostly used for sequential data. We are required to fine-tune an LSTM model to minimise the RMSE, which will ensure the model accurately predicts future air quality levels. This report details the exploration, preprocessing, model design, and experimentation, highlighting the steps taken to improve model performance.The architecture of an LSTM network relies on three fundamental elements: the cell state, representing the network's current long-term memory; the hidden state, capturing the output from the previous time step; and the input data for the current time step. It also uses the gates(Forget gate, Input gate & Output gate) and activation functions(Sigmoid and tanh) to ensure the model is fine-tuned well and works well. 
+
 
 ## Project Goal
 
@@ -67,7 +68,7 @@ A total of *15 experiments* were conducted to optimize model performance. The ta
 
 - *Best Training RMSE*: 0.0200 (scaled, Experiment 15)
 - *Leaderboard RMSE*: 1.2 (higher due to test set pattern shifts)
-- *Improvement*: From RMSE 0.0642 (baseline) to 0.0200 after tuning
+- *Improvement*: From RMSE 0.0642 (baseline) to 1.1 after tuning
 
 ---
 
